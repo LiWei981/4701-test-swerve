@@ -58,7 +58,9 @@ public class SwerveSubsystem extends SubsystemBase
     // Angle conversion factor is 360 / (GEAR RATIO * ENCODER RESOLUTION)
     //  In this case the gear ratio is 12.8 motor revolutions per wheel rotation.
     //  The encoder resolution per motor revolution is 1 per motor revolution.
-    double angleConversionFactor = SwerveMath.calculateDegreesPerSteeringRotation(21.4285714286, 1);
+    double value = 150/7;
+    //value = the gear ratio of the angle motor in decimal
+    double angleConversionFactor = SwerveMath.calculateDegreesPerSteeringRotation(value, 1);
     // Motor conversion factor is (PI * WHEEL DIAMETER) / (GEAR RATIO * ENCODER RESOLUTION).
     //  In this case the wheel diameter is 4 inches.
     //  The gear ratio is 6.75 motor revolutions per wheel rotation.
