@@ -52,13 +52,6 @@ public class DeviceJson
       case "integrated":
       case "attached":
         return null;
-      case "canandcoder":
-        return new SparkMaxEncoderSwerve(motor, 360);
-      case "ma3":
-      case "ctre_mag":
-      case "rev_hex":
-      case "throughbore":
-      case "am_mag":
       case "thrifty":
       case "analog":
         return new AnalogAbsoluteEncoderSwerve(id);
