@@ -134,9 +134,7 @@ public class DeviceJson
     {
       case "sparkmax":
         return new SparkMaxEncoderSwerve(motor, 1);
-      case "falcon":
-      case "talonfx":
-        return null;
+
     }
     throw new RuntimeException(
         "Could not create absolute encoder from data port of " + type + " id " + id);
